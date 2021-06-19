@@ -30,7 +30,9 @@ public class player_movement : MonoBehaviour
             //move the player to the right
             playerRB.AddForce(Vector2.right * player_movement_speed);
 
-        } else if (Input.GetKey(KeyCode.UpArrow))
+        } 
+        
+        if (Input.GetKey(KeyCode.UpArrow))
         {
             //move the player up
             playerRB.AddForce(Vector2.up * player_movement_speed);
